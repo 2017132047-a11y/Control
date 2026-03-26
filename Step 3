@@ -4,3 +4,10 @@ GripperState gripper = OPEN;
 
 // Transition
 gripper = CLOSE;
+
+
+
+
+
+
+
