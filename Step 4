@@ -1,0 +1,10 @@
+double theta1 = 10.0;
+double theta2 = 10.0;
+
+enum GripperState { OPEN, CLOSE };
+GripperState gripper = CLOSE;
+
+// 상태 전이
+theta1 = -10.0;
+theta2 = -10.0;
+gripper = OPEN;
