@@ -1,0 +1,10 @@
+double theta1 = 0.0;
+bool gripperOpen = true;
+
+// Initial State
+theta1 = 0.0;
+
+// State Transition
+if (theta1 == 0.0) {
+    theta1 = 10.0;
+}
