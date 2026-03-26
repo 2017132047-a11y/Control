@@ -1,0 +1,6 @@
+enum GripperState { OPEN, CLOSE };
+
+GripperState gripper = OPEN;
+
+// Transition
+gripper = CLOSE;
