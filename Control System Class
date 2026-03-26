@@ -1,0 +1,37 @@
+#include <iostream>
+
+enum GripperState { OPEN, CLOSE };
+
+class ControlSystem {
+private:
+    double jointL1;   // L1 각도
+    double jointL2;   // L2 각도
+    GripperState gripper;
+
+public:
+    // 초기화
+    ControlSystem() : jointL1(0.0), jointL2(0.0), gripper(OPEN) {}
+
+    // Joint 제어
+    void setJointL1(double angle) {
+        jointL1 = angle;
+    }
+
+    void setJointL2(double angle) {
+        jointL2 = angle;
+    }
+
+    // Gripper 제어
+    void setGripper(GripperState state) {
+        gripper = state;
+    }
+
+    // 동작 실행 (Phase 실행 느낌)
+    void execute() {
+        std::cout << "L1: " << jointL1 << " deg\n";
+        std::cout << "L2: " << jointL2 << " deg\n";
+        std::cout << "Gripper: " << (gripper == OPEN ? "OPEN" : "CLOSE") << "\n";
+    }
+};
+
+
