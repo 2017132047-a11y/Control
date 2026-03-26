@@ -1,0 +1,6 @@
+double theta2 = 0.0;
+
+// Initial → Move
+if (theta2 == 0.0) {
+    theta2 = 10.0;
+}
